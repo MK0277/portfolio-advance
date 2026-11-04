@@ -4,7 +4,7 @@ menuButton?.addEventListener("click",()=>{const open=nav.classList.toggle("open"
 nav?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");menuButton?.setAttribute("aria-expanded","false");}));
 
 const hero=document.querySelector(".hero");
-const portrait=document.querySelector(".portrait-placeholder");
+const portrait=document.querySelector(".hero-artwork");
 const motionButton=document.querySelector("#motionEnable");
 let targetX=0,targetY=0,currentX=0,currentY=0,frame=0;
 let sensorActive=false,baseBeta=null,baseGamma=null,lastPointer=0;
