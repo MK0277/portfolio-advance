@@ -4,3 +4,35 @@
 
 /* Motion sensor control */
 .motion-enable{position:absolute;z-index:5;left:50%;bottom:48px;transform:translateX(-50%);border:1px solid #777;background:#171914;color:var(--ink);border-radius:30px;padding:11px 17px;font:9px "DM Mono",monospace;letter-spacing:1px;white-space:nowrap;cursor:pointer;transition:background .2s,border-color .2s}.motion-enable:hover,.motion-enable[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#171813}.motion-enable .motion-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:8px}.motion-enable[aria-pressed="true"] .motion-dot{background:#171813}.motion-enable:focus-visible{outline:2px solid var(--accent);outline-offset:4px}@media(max-width:700px){.motion-enable{bottom:45px;font-size:8px;padding:10px 14px}.hero-person{height:59%}.hero-bottom{padding-bottom:42px}}
+
+
+/* Hero artwork — preserves the original sections below */
+.hero.hero-image-section{
+  display:block;
+  height:auto;
+  min-height:0;
+  padding:0;
+  overflow:hidden;
+  background:#101010;
+}
+.hero-artwork{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  transform-origin:50% 55%;
+  will-change:transform;
+}
+.hero-image-section .motion-enable{
+  bottom:14px;
+  left:50%;
+  z-index:6;
+  padding:8px 13px;
+  font-size:8px;
+  background:#101010d9;
+  backdrop-filter:blur(8px);
+}
+@media(max-width:700px){
+  .hero-artwork{width:100%;height:auto}
+  .hero-image-section .motion-enable{bottom:8px;padding:7px 10px;font-size:7px}
+}
