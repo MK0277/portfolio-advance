@@ -36,3 +36,39 @@
   .hero-artwork{width:100%;height:auto}
   .hero-image-section .motion-enable{bottom:8px;padding:7px 10px;font-size:7px}
 }
+
+/* Coded hero — character artwork intentionally hidden for now */
+.hero.hero-coded{height:min(900px,100svh);min-height:690px;padding:126px 5.5vw 38px;display:flex;justify-content:space-between;background:radial-gradient(ellipse at 50% 48%,#292b22 0%,#171813 39%,#101010 74%);isolation:isolate}
+.hero-coded .hero-topline{position:relative;z-index:2}
+.hero-center{position:absolute;inset:20% 5vw 20%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:2}
+.hero-eyebrow{font:10px "DM Mono",monospace;letter-spacing:2px;color:var(--muted);margin:0 0 25px}
+.hero-eyebrow span{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;box-shadow:0 0 15px #d6ff4f88}
+.hero-display{font-size:clamp(100px,19vw,270px);line-height:.72;letter-spacing:-.105em;font-weight:700;margin:0;color:var(--ink)}
+.hero-display em{font-style:normal;color:var(--accent)}
+.hero-display sup{font:12px "DM Mono",monospace;letter-spacing:0;vertical-align:top;color:var(--muted);margin-left:14px}
+.hero-subline{font:10px/1.9 "DM Mono",monospace;letter-spacing:2px;color:#aaa99f;margin:32px 0 0}
+.hero-coded .hero-bottom{position:relative;z-index:3;width:100%;align-items:flex-end}
+.hero-coded .hero-intro{font-size:clamp(22px,3vw,40px)}
+.hero-scroll{display:flex;align-items:center;gap:14px;font:9px "DM Mono",monospace;letter-spacing:1.3px;color:var(--muted)}
+.hero-scroll b{font-size:24px;color:var(--accent);font-weight:400}
+.hero-side-note{position:absolute;right:2.2vw;top:48%;writing-mode:vertical-rl;font:8px "DM Mono",monospace;letter-spacing:2px;color:#686960}
+.hero-coded .hero-orbit{z-index:0;border-color:#d6ff4f12}
+.hero-coded .orbit-one{width:560px;height:560px}
+.hero-coded .orbit-two{width:790px;height:790px}
+.hero-artwork,.hero-coded .motion-enable{display:none!important}
+@media(max-width:700px){
+ .hero.hero-coded{height:790px;min-height:720px;padding:102px 6vw 30px}
+ .hero-coded .hero-topline{font-size:7px;line-height:1.7;gap:18px}
+ .hero-coded .hero-topline span:last-child{text-align:right;max-width:125px}
+ .hero-center{inset:22% 4vw 23%}
+ .hero-display{font-size:clamp(88px,22vw,150px)}
+ .hero-eyebrow{font-size:8px;letter-spacing:1.4px;margin-bottom:23px}
+ .hero-subline{font-size:8px;letter-spacing:1.3px;margin-top:25px}
+ .hero-coded .hero-bottom{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:end}
+ .hero-coded .hero-intro{font-size:24px}
+ .hero-scroll{grid-column:1;grid-row:2;font-size:7px}
+ .hero-index{grid-column:2;grid-row:1/3;font-size:7px}
+ .hero-side-note{display:none}
+ .hero-coded .orbit-one{width:350px;height:350px}
+ .hero-coded .orbit-two{width:500px;height:500px}
+}
